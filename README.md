@@ -44,7 +44,7 @@ static: "module"
 {
     "class": "define",
     "abstract": ["abs", { "before": "define" }],
-    "interface": ["impl", "interface", {"@class", 10.001, true},
-    "static": "module",
+    "interface": ["impl", "interface", ["@class", 10.001, true]],
+    "static": "module"
 }
 ```
