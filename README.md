@@ -22,6 +22,7 @@ coworker: <
   nickname: "Sammy"
   age: 23
 >
+
 boss: <
   name: "Dave"
   nickname: "Davey"
@@ -32,9 +33,7 @@ boss: <
 # Full Example
 ```
 class: "define"
-
 abstract: "abs", < before: class >
-
 interface: "impl", "interface", < "@class", 10.001, true >
 static: "module"
 ```
