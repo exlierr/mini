@@ -4,8 +4,8 @@
 
 ## 🎯 Basic Key-Value Pairs
 ```mini
-name: "Taylor"
-nickname: "Tay"
+name: "Richard"
+nickname: "Dick"
 age: 28
 ```
 
@@ -13,8 +13,8 @@ age: 28
 
 ```json
 {
-  "name": "Taylor",
-  "nickname": "Tay",
+  "name": "Richard",
+  "nickname": "Dick",
   "age": 28
 }
 ```
@@ -82,8 +82,8 @@ fullPath: folder "/" filename  // → "/home/user/data.txt"
 
 ## 🔗 Referencing Other Keys
 ```mini
-firstName: "Kai"
-lastName: "Ragan"
+firstName: "Richard"
+lastName: "Smith"
 fullName: firstName " " lastName
 ```
 
@@ -91,9 +91,9 @@ fullName: firstName " " lastName
 
 ```json
 {
-  "firstName": "Kai",
-  "lastName": "Ragan",
-  "fullName": "Kai Ragan"
+  "firstName": "Richard",
+  "lastName": "Smith",
+  "fullName": "Richard Smith"
 }
 ```
 
@@ -119,9 +119,9 @@ topLang: languages[0]   // → "English"
 ## 🧍 Nested Objects and Scoped Access
 ```mini
 user: <
-  name: "Luna"
+  name: "Richard"
   contact: <
-    email: "luna@example.com"
+    email: "richard@example.com"
   >
 >
 
@@ -133,12 +133,12 @@ emailAddress: user.contact.email
 ```json
 {
   "user": {
-    "name": "Luna",
+    "name": "Richard",
     "contact": {
-      "email": "luna@example.com"
+      "email": "richard@example.com"
     }
   },
-  "emailAddress": "luna@example.com"
+  "emailAddress": "richard@example.com"
 }
 ```
 
@@ -159,15 +159,6 @@ area: (width * height)         // → 2073600
   "height": 1080,
   "area": 2073600
 }
-```
-
----
-
-## 💥 Invalid Examples (For Reference)
-```mini
-truthy: true false             // ❌ Invalid — booleans not allowed in string concat
-mix: "10" + 5                  // ❌ Invalid — cannot mix string and number in arithmetic
-undefinedKey: notDefined       // ❌ Invalid — undefined references not allowed
 ```
 
 ---
